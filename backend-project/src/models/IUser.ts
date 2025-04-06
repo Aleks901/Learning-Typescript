@@ -7,5 +7,8 @@ export interface IUser
     emailAddress: string;
     userType: UserType;
 
+    /**
+     * @returns string - All user related information.
+     */
     getUserInfo(): string;
 };

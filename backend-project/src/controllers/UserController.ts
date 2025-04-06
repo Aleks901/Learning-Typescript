@@ -1,6 +1,12 @@
 import { Request, Response } from 'express';
 import { User } from '../models/User';
 
+/*
+This is where the createUser request is being done. 
+I probably won't use passwords for the time being, seeing as that'd be
+more about hashing etc than learning TS and backend programming.
+*/
+
 const users: User[] = [];
 
 export const createUser = (req: Request, res: Response): void => {
